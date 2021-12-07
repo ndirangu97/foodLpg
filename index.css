@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    max-height: 100vh;
+}
+#header img{
+   height: 60px;
+   width: 60px;
+  padding: 5px 30px;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    max-height: 100px;
+    background: #a35100;
+}
+.btn{
+    display: inline-block;
+    color: #fff;
+    padding: 8px 30px;
+    background: #a35100;
+    margin: 20px 0;
+    border-radius: 30px;
+   text-decoration: none;
+   border: 1px solid #fff;
+    
+}
+.content{
+    display: flex;
+    height: 800px;
+    padding-top: 80px;
+}
+.col1{
+    flex-basis: 40%;
+    text-align: center;
+    padding-top: 60px;
+    padding-left: 30px;
+}
+.col1 p{
+    padding-top: 30px;
+}
+.col2 {
+    flex-basis: 60%;
+}
+.col2 img{
+    padding-left: 200px;
+}
+.toggleIcons img{
+    height: 30px;
+    width: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.toggleIcons img:hover{
+    transform: translateY(-10px);
+}
+.toggleIcons{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+@media(max-width:700px){
+    .content{
+        flex-direction: column;
+    }
+    #imageTogggled{
+        margin-right: 140px;
+    }
+   .col2{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+
+   .toggleIcons{
+    position: absolute;
+    width: 100%;
+    bottom: -400px;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+}
